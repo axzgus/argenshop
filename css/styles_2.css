@@ -1,0 +1,184 @@
+/*********** 1. Básicos ***********/
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: sans-serif;
+	/* Background pattern from Subtle Patterns */
+	background-image: url(../images/seamless_paper_texture.png);
+
+	margin: 0;
+}
+
+ul, ol{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+img{
+	width: 100%;
+}
+
+/*********** 1. Home ***********/
+.banner{
+	display: none;
+}
+
+.container{
+	margin: 0 15px;
+}
+
+.logo{
+	/*float: left;
+	position: relative;
+	top: 10px;
+	left: 20px;
+	max-width = 30px;*/
+	align: left;
+	width: 15%;
+	margin: 40px;
+}
+
+.toggle-nav{
+	display: block;
+	margin: 15px 0;
+	background-color: #c1bc00;
+	width: 45px;
+	text-align: center;
+	padding: 15px 0;
+	color: #fff;
+	font-size: 1.2em;
+}
+
+.main-nav{
+	position: fixed;
+	right: -50vw;
+	top: 0;
+	width: 50vw;
+	height: 100vh;
+	background-color: #FFF;
+	transition: 300ms;
+	opacity: 0;
+}
+
+.open-nav{
+	right: 0;
+	opacity: 1;
+}
+
+.main-nav a{
+	display: block;
+	background-color: #c1bc00;
+	color: #FFF;
+	font-size: 1.1em;
+	text-align: center;
+	padding: 15px;
+	border-bottom: solid 3px rgba(255,255,255,0.5)
+}
+
+.rubro a{
+	background-color: #222;
+	color: #fff;
+	display: inline-block;
+	padding: 15px;
+	margin-bottom: 30px;
+}
+
+.main-footer a{
+	display: block;
+	background-color: #ec2d2d;
+	color: #FFFFFF;
+	padding: 15px 25px;
+	margin-bottom: 3px;
+	text-transform: uppercase; /* lowercase - capitalize */
+}
+
+
+/*********** 2. Media-Queries ***********/
+@media (min-width: 700px) {
+	.container{
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.toggle-nav{
+		display: none;
+	}
+	.main-nav{
+		/*display: block !important;*/
+		overflow: hidden;
+		margin-bottom: 20px;
+		position: static; /* parar quitar relative, absolute o fixed */
+		opacity: 1;
+		width: 100%;
+		height: auto;
+		background-color: transparent;
+	}
+	.main-nav li{
+		width: 15%;
+		margin: 0 0.83%;
+		float: left;
+		/*display: inline-block;*/
+	}
+	.main-nav a{
+		padding-left: 0;
+		padding-right: 0;
+		font-size: 1.2em;
+		border: none;
+	}
+	.new-nav a{
+		background: #c1bc00;
+	}
+	.banner{
+		display: block;
+		margin-left: 0.83%;
+		margin-right: 0.83%;
+	}
+	.rubros3{
+		overflow: hidden;
+	}
+	.rubro{
+		width: 48.34%;
+		margin-left: 0.83%;
+		margin-right: 0.83%;
+		margin-top: 40px;
+		float: left;
+	}
+}
+
+
+
+
+@media (min-width: 1000px) {
+	.container{
+		max-width: 1200px;
+	}
+	.rubro{
+		width:31.67%;
+		margin-left: 0.83%;
+		margin-right: 0.83%;
+		margin-top: 40px;
+		float: left;
+	}
+	.main-footer a{
+
+		float: left;
+		background-color: #c1bc00;
+		color: #FFFFFF;
+		padding: 15px 25px;
+		margin-bottom: 3px;
+		text-align:center;
+
+}
+	.main-footer li{
+		display: inline-block;
+	}
+	.main-footer{
+		text-align: center;
+	}
+}

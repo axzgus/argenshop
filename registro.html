@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="proyecto integrador" content="ArgenShop e-commerce">
+		<title>Registracion</title>
+		<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+		<link rel="stylesheet" href="css/styles_2.css">
+	</head>
+	<body>
+
+	<div class="container">
+
+		<header class="main-header">
+			<img src="images/Argenshop-logo1.png" alt="ArgenShopLogo" class="logo">
+
+			<a href="#" class="toggle-nav">
+				<span class="ion-navicon-round"></span>
+			</a>
+
+			<nav class="main-nav new-nav">
+				<ul>
+					<li><a href="index.html">INICIO</a></li>
+					<li><a href="#">LA EMPRESA</a></li>
+					<li><a href="#">PRODUCTOS</a></li>
+          <li><a href="registro.html">REGISTRESE</a></li>
+					<li><a href="preguntas.html">PREGUNTAS</a></li>
+					<li><a href="#">LOGIN</a></li>
+				</ul>
+			</nav>
+		</header>
+  <body>
+
+<p>
+  Por favor, elija un nombre de usuario y una contraseña los cuales podrán estar compuesto por letras y números (mínimo de 6 caracteres y máximo de 10 caracteres). Recuerde que el sistema es "case sensitive" lo que quiere decir que no es lo mismo mayúsculas que minúsculas al escribir el nombre de usuario o clave.
+Para poder completar exitosamente el proceso de registración, es indispensable que introduzca un número de teléfono vigente.
+</p>
+
+<table border="0" width="460">
+<form action="nn.php" method="POST" name="usuarios">
+
+<tr><td><font color="#000000">Usuario: <b>(*)</b></font></td><td><input type="text" required name="user" size="20" value="" maxlength="10" class="form">
+</td></tr>
+<tr><td>Clave: <b>(*)</b></td><td><input type="password" required name="pass" size="20" value="" maxlength="10" class="form"></td></tr>
+<tr><td>Confirme Clave: <b>(*)</b></td><td><input type="password" required name="repass" size="20" value="" maxlength="10" class="form"></td></tr>
+<tr><td>Nombres: <b>(*)</b></td><td><input type="text" required name="nombres" size="30" value="" maxlength="80" class="form"></td></tr>
+<tr><td>Apellido: <b>(*)</b></td><td><input type="text" required name="apellido" size="30" value="" maxlength="80" class="form"></td></tr>
+<tr><td>Empresa: </td><td><input type="text" name="empresa" size="30" value="" maxlength="120" class="form"></td></tr>
+<tr><td>Cargo: </td><td><input type="text" name="cargo" size="30" value="" maxlength="80" class="form"></td></tr>
+<tr><td>Rubro <b>(*)</b></td><td><select name="tipo_comercio" required class="form"><option value="">Seleccione...</option><option value="Cafeteria">Cafeteria</option><option value="Carniceria">Carniceria</option><option value="Catering">Catering</option><option value="Comedor">Comedor</option><option value="Fabrica de pastas">Fabrica de pastas</option><option value="Fast-food">Fast-food</option><option value="Heladeria">Heladeria</option><option value="Hospital - Clinica">Hospital - Clinica</option><option value="Hotel">Hotel</option><option value="Panaderia - Pasteleria">Panaderia - Pasteleria</option><option value="Particular uso hogar">Particular uso hogar</option><option value="Pescaderia">Pescaderia</option><option value="Pizzeria">Pizzeria</option><option value="Restaurante / Parrilla">Restaurante / Parrilla</option><option value="Restobar">Restobar</option><option value="Salon de Fiestas">Salon de Fiestas</option><option value="Verduleria">Verduleria</option><option value="Otro">Otro...</option></select></td></tr>
+<tr><td>CUIT o DNI: </td><td><input type="text" name="cuit" size="30" value="" maxlength="13" class="form"></td></tr>
+<tr><td>Dirección: </td><td><input type="text" name="direccion" size="30" value="" maxlength="80" class="form"></td></tr>
+<tr><td>Ciudad: <b>(*)</b></td><td><input type="text" required name="ciudad" size="30" value="" maxlength="100" class="form"></td></tr>
+<tr><td>E-Mail: <b>(*)</b></td><td><input type="email" required name="email" size="30" value="" maxlength="80" class="form"></td></tr>
+<tr><td>E-Mail Alternativo:</td><td><input type="email" name="email1" size="30" value="" maxlength="80" class="form"></td></tr>
+<tr><td>Whatsapp: </td><td><input type="text" name="whatsapp" size="30" value="" maxlength="80" class="form"></td></tr>
+<tr><td>Teléfono: </td><td><input type="text" name="tel" size="20" value="" maxlength="40" class="form"></td></tr>
+<tr><td>Teléfono Alternativo: </td><td><input type="text" name="cel" size="20" value="" maxlength="15" class="form"></td></tr>
+
+<br>
+</td></tr>
+</td></tr>
+<tr><td  colspan="3" align="center"><input type="submit" name="Guardar" value="Enviar" class="boton">
+<input type="Reset" name="Limpiar" value=" Borrar " class="boton"></td></tr>
+<tr><td><b>(*) Datos Requeridos.</b></td></tr>
+</form>
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script>
+$('.toggle-nav').click(function (){
+  $('.main-nav').toggleClass('open-nav');
+});
+</script>
+</body>
+</html>
