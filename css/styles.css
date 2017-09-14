@@ -4,8 +4,10 @@
 }
 
 body{
-	font-family: sans-serif;
-	background-image: url(../images/bg-body.png);
+	font-family:serif;
+	/* Background pattern from Subtle Patterns */
+	background-image: url(../images/seamless_paper_texture.png);
+
 	margin: 0;
 }
 
@@ -23,27 +25,24 @@ img{
 	width: 100%;
 }
 
-/*********** 1. Home ***********/
-.banner, .main-nav{
+.banner{
 	display: none;
 }
 
 .container{
-	margin: 0 15px;
+	margin: 0 10px;
 }
 
 .logo{
-	display: block;
-	max-width: 180px;
-	margin: 15px auto 30px;
-	border-radius: 50%;
-	border: solid 1px #000;
+	align: left;
+	width: 15%;
+	margin: 20px;
 }
 
 .toggle-nav{
 	display: block;
-	margin: 0 auto 15px;
-	background-color: #222;
+	margin: 15px 5px;
+	background-color: #c1bc00;
 	width: 45px;
 	text-align: center;
 	padding: 15px 0;
@@ -51,33 +50,63 @@ img{
 	font-size: 1.2em;
 }
 
+.main-nav{
+	position: fixed;
+	right: -0vw;
+	top: 0;
+	width: 50vw;
+	height: 100vh;
+	background-color: #FFF;
+	transition: 300ms;
+	opacity: 0;
+	font-size: 1.1em;
+}
+
+.open-nav{
+	right: 0;
+	opacity: 1;
+}
+
 .main-nav a{
 	display: block;
-	background-color: #222;
+	background-color: #c1bc00;
 	color: #FFF;
-	font-size: 1.4em;
+	font-size: 1em;
 	text-align: center;
 	padding: 15px;
 	border-bottom: solid 3px rgba(255,255,255,0.5)
 }
 
-.product a{
-	background-color: #222;
+.rubro a{
+	background-color: rgba(8, 26, 51, 0.62);
 	color: #fff;
 	display: inline-block;
 	padding: 15px;
 	margin-bottom: 30px;
 }
 
+.boton{
+	display: inline-block;
+	color:white;
+	background-color:rgba(8, 26, 51, 0.62);
+}
+
 .main-footer a{
 	display: block;
-	background-color: #ec2d2d;
+	background-color: #c1bc00;
 	color: #FFFFFF;
 	padding: 15px 25px;
 	margin-bottom: 3px;
-	text-transform: uppercase; /* lowercase - capitalize */
-}
 
+}
+.QA li{
+font-weight:bold;
+}
+.QA{
+width: 98%;
+margin-left:10px;
+
+}
 
 /*********** 2. Media-Queries ***********/
 @media (min-width: 700px) {
@@ -89,33 +118,89 @@ img{
 		display: none;
 	}
 	.main-nav{
-		display: block !important;
 		overflow: hidden;
-		margin-bottom: 40px;
+		margin-bottom: 20px;
+		position: static;
+		opacity: 1;
+		width: 100%;
+		height: auto;
+		background-color: transparent;
 	}
 	.main-nav li{
-		/*width: 15%;*/
+		width: 15%;
 		margin: 0 0.83%;
-		/*float: left;*/
-		display: inline-block;
+		float: left;
+
 	}
 	.main-nav a{
-		/*padding-left: 0;
-		padding-right: 0;*/
-		font-size: 1.2em;
+		padding-left: 0;
+		padding-right: 0;
+		font-size: 1em;
 		border: none;
+	}
+	.new-nav a{
+		background: #c1bc00;
+	}
+	.banner{
+		display: block;
+		margin-left: 0.83%;
+		margin-right: 0.83%;
+	}
+	.rubros3{
+		overflow: hidden;
+	}
+	.rubro{
+		width: 48.34%;
+		margin-left: 0.83%;
+		margin-right: 0.83%;
+		margin-top: 40px;
+		float: left;
 	}
 }
 
 
 
 
-
-
-
-
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
 	.container{
 		max-width: 1200px;
 	}
+	.rubro{
+		width:31.67%;
+		margin-left: 0.83%;
+		margin-right: 0.83%;
+		margin-top: 40px;
+		float: left;
+	}
+	.main-footer a{
+
+		float: left;
+		background-color: #c1bc00;
+		color: #FFFFFF;
+		padding: 15px 25px;
+		margin-bottom: 3px;
+		text-align:center;
+
+}
+	.main-footer li{
+		display: inline-block;
+	}
+	.main-footer{
+		text-align: center;
+	}
+}
+
+.IniciarSesion{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.IniciarSesion label{
+	font-size: 30px;
+
+}
+
+.IniciarSesion button{
+	background-color: #c1bc00;
 }

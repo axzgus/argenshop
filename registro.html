@@ -5,7 +5,7 @@
 		<meta name="proyecto integrador" content="ArgenShop e-commerce">
 		<title>Registracion</title>
 		<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-		<link rel="stylesheet" href="css/styles_2.css">
+		<link rel="stylesheet" href="css/styles.css">
 	</head>
 	<body>
 
@@ -25,7 +25,7 @@
 					<li><a href="#">PRODUCTOS</a></li>
           <li><a href="registro.html">REGISTRESE</a></li>
 					<li><a href="preguntas.html">PREGUNTAS</a></li>
-					<li><a href="#">LOGIN</a></li>
+					<li><a href="login.html">LOGIN</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -36,10 +36,10 @@
 Para poder completar exitosamente el proceso de registración, es indispensable que introduzca un número de teléfono vigente.
 </p>
 
+<form>
 <table border="0" width="460">
-<form action="nn.php" method="POST" name="usuarios">
 
-<tr><td><font color="#000000">Usuario: <b>(*)</b></font></td><td><input type="text" required name="user" size="20" value="" maxlength="10" class="form">
+<tr><td>Usuario: <b>(*)</b></td><td><input type="text" required name="user" size="20" value="" maxlength="10" class="form">
 </td></tr>
 <tr><td>Clave: <b>(*)</b></td><td><input type="password" required name="pass" size="20" value="" maxlength="10" class="form"></td></tr>
 <tr><td>Confirme Clave: <b>(*)</b></td><td><input type="password" required name="repass" size="20" value="" maxlength="10" class="form"></td></tr>
@@ -56,12 +56,10 @@ Para poder completar exitosamente el proceso de registración, es indispensable 
 <tr><td>Whatsapp: </td><td><input type="text" name="whatsapp" size="30" value="" maxlength="80" class="form"></td></tr>
 <tr><td>Teléfono: </td><td><input type="text" name="tel" size="20" value="" maxlength="40" class="form"></td></tr>
 <tr><td>Teléfono Alternativo: </td><td><input type="text" name="cel" size="20" value="" maxlength="15" class="form"></td></tr>
+</td></tr>
+<tr><td> </td><td><input type="submit" name="Guardar" value="Enviar" class="boton"> <input type="Reset" name="Limpiar" value=" Borrar " class="boton"></td></tr>
 
 <br>
-</td></tr>
-</td></tr>
-<tr><td  colspan="3" align="center"><input type="submit" name="Guardar" value="Enviar" class="boton">
-<input type="Reset" name="Limpiar" value=" Borrar " class="boton"></td></tr>
 <tr><td><b>(*) Datos Requeridos.</b></td></tr>
 </form>
 
